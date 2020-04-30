@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gis-technical-challenge"
+version = "0.1.0"
+description = "A technical challenge in reading large geospatial data from disk"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+xarray = "^0.15.1"
+netcdf4 = "^1.5.3"
+dask = {version = "^2.15.0", extras = ["distributed", "array"]}
+scipy = "^1.4.1"
+zarr = "^2.4.0"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+ipykernel = "^5.2.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
